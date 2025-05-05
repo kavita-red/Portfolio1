@@ -2,22 +2,36 @@ body {
     margin: 0;
     font-family: raleway;
   }
-  
-  .container {
+  header {
     display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    width: 70%;
+  }
+  
+  .main-section {
+    display: flex;
+    flex-direction: column;
     height: 100vh;
-    background: linear-gradient(100deg, rgb(215, 215, 215) 49.96%,  black 50.04%)
-
+    background: linear-gradient(100deg, rgb(215, 215, 215) 45%, black 45%);
+    align-items: center;
   }
   
   .left {
-    flex: 1;
-    padding: 80px 150px;
+    /* flex: 1; */
+    /* padding: 80px 150px; */
     display: flex;
     flex-direction: column;
+    align-items: center;
     justify-content: center;
     width: 50%;
 
+  }
+  .left-content-wrapper {
+    padding: 20px;
+  }
+  .main-intro {
+    margin: 20px auto;
   }
   
   .left h2 {
@@ -35,28 +49,31 @@ body {
   
   .subtitle {
     color: #909090;
-    margin-bottom: 90px;
+    /* margin-bottom: 90px; */
     font-weight: bold;
-    margin-left: 20px;
+    /* margin-left: 20px; */
   }
   
+  .social-icons {
+    margin: 20px auto;
+  }
   .social-icons img {
     width: 18px;
     margin-right: 10px;
     cursor: pointer;
     background: #C4C4C4;
     padding: 8px;
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.4);
+    box-shadow: 0px 3px 3px 1px rgba(0, 0, 0, 0.4);
     transition: transform 0.2s ease;
   }
 
   nav {
     display: flex;
-    justify-content: flex-end;
+    /* justify-content: flex-end; */
     gap: 50px;
     align-items: center;
-    margin-top: 30px;
-    margin-right: 100px;
+    /* margin-top: 30px; */
+    margin-right: 20px;
   }
   
   .btn {
@@ -66,19 +83,23 @@ body {
     border-radius: 20px;
     font-weight: bold;
   }
+  .main-content-wrapper {
+    display: flex;
+    width: 70%;
+  }
   
   .profile-photo {
-    font-family: raleway;
-    font-weight: bold;
-    position: absolute;
-    bottom: 0;
-    width: 783;
+    /* font-family: raleway;
+    font-weight: bold; */
+    /* position: absolute; */
+    /* bottom: 0; */
+    /* width: 783; */
     height: 75%;
   }
  
    .logo {
     width: 35px;
-    margin-bottom: 180px;
+    /* margin-bottom: 180px; */
   }
    
 
