@@ -1,6 +1,6 @@
 body {
     margin: 0;
-    font-family: raleway;
+    font-family: 'Raleway', sans-serif;
   }
   header {
     display: flex;
@@ -89,41 +89,36 @@ body {
   }
   
   .profile-photo {
-    /* font-family: raleway;
-    font-weight: bold; */
-    /* position: absolute; */
-    /* bottom: 0; */
-    /* width: 783; */
-    height: 75%;
+    height: 70%;
+
   }
  
    .logo {
     width: 35px;
-    /* margin-bottom: 180px; */
   }
    
 
   /* About Section */
 .about {
-  padding: 100px 150px;
+  padding: 30px;
   background: linear-gradient(to bottom, #f1f1f1, #dcdcdc);
   text-align: center;
 }
 
 .about-header h2 {
   font-size: 28px;
-  border: 2px solid black;
+  border: 5px solid black;
   display: inline-block;
   padding: 10px 30px;
-  margin-bottom: 20px;
-  font-weight: 700;
+  margin-bottom: 30px;
+  font-weight: bold;
 }
 
 .about-header p {
-  max-width: 700px;
-  margin: 0 auto 40px;
+  max-width: 85ch;   
+  margin: 0 auto 30px;    
+  text-align: center;     
   color: #333;
-  line-height: 1.6;
 }
 
 .explore {
@@ -135,35 +130,51 @@ body {
   font-weight: bold;
 }
 
-.divider {
-  width: 100px;
-  height: 1px;
+.explore-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.vertical-line {
+  width: 3px;
+  height: 30px;
   background-color: black;
 }
 
+.explore-text {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+
 .services {
   display: flex;
-  justify-content: space-around;
+  gap: 5%;
   flex-wrap: wrap;
-  gap: 40px;
-  margin-bottom: 60px;
+  justify-content: center;
 }
 
 .service {
-  flex: 1;
-  min-width: 250px;
-  max-width: 300px;
+  width: 45%;
+  
 }
 
 .service h3 {
   font-weight: bold;
   margin-bottom: 10px;
-  position: relative;
+  font-family: Open Sans, sans-serif;
 }
 
 .service p {
   color: #555;
   font-size: 14px;
+  text-align: left;
+  max-width: 58ch;
+  margin: 0 auto;
 }
 
 .skills-btn-container {
@@ -173,7 +184,7 @@ body {
 .skills-btn {
   font-size: 18px;
   padding: 10px 40px;
-  border: 2px solid black;
+  border: 4px solid black;
   text-decoration: none;
   color: black;
   font-weight: bold;
@@ -183,17 +194,11 @@ body {
   position: relative;
   background-color: #1b1b1b;
   color: white;
-  padding: 80px 50px;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: center;
-  overflow: hidden;
+  padding: 1% 4%;
 }
 
 .intro-content {
-  max-width: 800px;
-  z-index: 2;
+  max-width: 80%
 }
 
 .intro-content h2 {
@@ -207,7 +212,6 @@ body {
   line-height: 1.8;
   font-size: 14px;
   color: #e0e0e0;
-  margin-bottom: 30px;
 }
 
 .read-more-btn {
@@ -218,17 +222,4 @@ body {
   text-decoration: none;
   font-weight: bold;
   letter-spacing: 1px;
-}
-
-.intro-bg {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  right: 0;
-  width: 400px;
-  height: 400px;
-  /* background: url('Background.svg') no-repeat right bottom; */
-  background-size: contain;
-  opacity: 0.1;
-  z-index: 1;
 }
